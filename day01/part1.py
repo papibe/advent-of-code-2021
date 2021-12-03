@@ -19,7 +19,7 @@ def solution(filename):
 
 if __name__ == "__main__":
     result = solution("./example.txt")
-    print(result)
+    print(result)   # it should be 7
 
     result = solution("./input.txt")
     print(result)
