@@ -32,7 +32,7 @@ def solution(filename):
 
 if __name__ == "__main__":
     result = solution("./data/example.txt")
-    print(result)   # it should be 45
+    print(result)   # it should be 112
 
     result = solution("./data/input.txt")
     print(result)
