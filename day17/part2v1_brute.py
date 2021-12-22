@@ -25,15 +25,14 @@ def solution(filename):
                 y = step * y_velocity - ((step - 1) * step) /2
                 if x0 <= x <= x1 and y0 <= y <= y1:
                     velocities += 1
-                    print(velocities)
                     break
 
     return velocities
 
 
 if __name__ == "__main__":
-    # result = solution("./data/example.txt")
-    # print(result)   # it should be 45
+    result = solution("./data/example.txt")
+    print(result)   # it should be 45
 
     result = solution("./data/input.txt")
     print(result)
