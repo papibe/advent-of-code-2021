@@ -9,20 +9,16 @@ def solution(position1, position2):
         rolled_dice += 3
         score1 += position1
         if score1 >= 1000:
-            looser_score = score2
-            break
+            return rolled_dice * score2
 
         dice2 = 3 * (6 * play + 5)
         position2 = (position2 - 1 + dice2) % 10 + 1
         score2 += position2
         rolled_dice += 3
         if score2 >= 1000:
-            looser_score = score1
-            break
+            return rolled_dice * score1
 
         play += 1
-
-    return rolled_dice  * looser_score
 
 
 if __name__ == "__main__":
